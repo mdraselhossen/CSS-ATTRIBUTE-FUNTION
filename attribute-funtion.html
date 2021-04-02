@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css attribute funtion tutorial</title>
+	<style type="text/css">
+		p::after{
+			content: attr(class);
+			background-color: green;
+			color: white;
+			font-size: 25px;
+		}
+		p::before{
+			content: attr(id);
+			background-color: red;
+			color: white;
+			font-size: 25px;
+		}
+		a::before{
+			content: attr(href);
+			background-color:purple;
+			color: white;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<p class="channel"> Welcome to youtube </p>
+	<p id="Welcome"> to youtube channel </p>
+	<a href="www.youtube.com">Click Here</a>
+
+</body>
+</html>
